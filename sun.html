@@ -1,0 +1,205 @@
+<HTML>
+<HEAD>
+	<link rel="stylesheet" href="suncebre.css">
+	<META http-equiv=content-type content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	  
+	  $("a").on('click', function(event) {
+
+		
+		if (this.hash !== "") {
+		  
+		  event.preventDefault();
+
+		  
+		  var hash = this.hash;
+
+		  
+		  $('html, body').animate({
+			scrollTop: $(hash).offset().top
+		  }, 800, function(){
+
+			
+			window.location.hash = hash;
+		  });
+		} 
+	  });
+	});
+	</script>
+	<style>
+			body{
+              text-align:center;
+             }
+			 
+			 .about{
+				float:right;
+			 }
+			 
+			 .topnav {
+			  background-color: #363535;
+			  overflow: hidden;
+			}
+		
+			.topnav a {
+			  float: left;
+			  color: #f2f2f2;
+			  text-align: center;
+			  padding: 30px 30px;
+			  text-decoration: none;
+			  font-size: 22px;
+			}
+
+			.topnav a:hover {
+			  background-color: #111;
+			  color: white;
+			  transition: 0.6s ease;
+			}
+			.topnav a.active {
+			  background-color: black;
+			  color: white;
+			}
+
+			  
+			  @media screen and (max-width: 320px) {
+				.hide { display: none; }
+			}
+			
+		
+
+	</style>
+	<TITLE>Sara Bimbašić</TITLE>
+</HEAD>
+<BODY style="background-color:black;">
+		<div class="topnav">
+			<a href="index.html">Home</a>
+			<a href="predmeti.html">Predmeti</a>
+			<a href="radovi.html">Moji radovi</a>
+			<a href="osaua.html">OSAuA</a>
+			<a class="active" href="sun.html">Sunce</a>
+			<div class="about"><a href="about.html">O meni</a></div>
+		</div>
+
+		<div id="slideshow">
+        <div class="slide-wrapper">
+			<div class="slide">
+                <img src="sun7.png" alt="sunce" class="slide-number" style="width:100%;" /> 
+             </div>
+            <div class="slide">
+                <img src="sun2.jpg" alt="sunce" class="slide-number" style="width:100%;" />
+            </div>
+            <div class="slide">
+                <img src="sun8.jpg" alt="sunce" class="slide-number" style="width:100%;" />
+            </div>
+            <div class="slide">
+                <img src="sun9.jpg" alt="sunce" class="slide-number" style="width:100%;" />
+            </div>
+        </div>
+		</div>
+		
+		<div class="osnovnosuncealo">
+			<ul class="osnovnosunce">
+				<div class="osunceo"><li class="tekst0">SUNCE |</li></div>
+				<div class="1osunceo"><li><table><tr><td class="tekst1">TIP ZVEZDE</td></tr><tr><td class="tekst2">Žuti patuljak</td></tr></table></li></div>
+				<div class="1osunceo"><li><table><tr><td class="tekst1">STAROST</td></tr><tr><td class="tekst2">~4.5 milijardi godina</td></tr></table></li></div>
+				<div class="1osunceo"><li><table><tr><td class="tekst1">UDALJENOST OD CENTRA GALAKSIJE</td></tr><tr><td class="tekst2">26,000 svetlosnih godina</td></tr></table></li></div>
+			</ul>
+		</div>
+		
+		<div class="saznajvise">
+			 <p><a class="dugme" href="#deo1">Saznaj više </a><i class="arrow down"></i></p>
+		</div>
+		
+		<nav id="deo1" class="middlenavbarnav" role="navigation" >
+			<div class="middlenavbardiv">
+			<ul class="middlenavbar">
+				<li class="current">
+					<a href="sun.html">Pregled</a>
+				</li>
+				<li>
+					<a href="sun2.html">Opširnije</a>
+				</li>
+				<li>
+					<a href="sun3.html">Istraživanje</a>
+				</li>
+				<li>
+					<a href="sun4.html">Galerija</a>
+				</li>
+			</ul>
+			</div>
+		</nav>
+	
+		
+		<div class="row">
+		  <div class="column">
+			<table class="aaaa">
+			<tr>
+				<td style="color:white">Sunce (astronomski simbol: ☉) je zvezda stara 4.5 milijardi godina.
+			Ekstremno vruća lopta hidrogena i helijuma u samom centru našeg solarnog sistema. Sunce je 
+			približno udaljeno 150 miliona kilometara od Zemlje. Sunce je ubedljivo najveći objekat u 
+			našem solarnom sistemu, bilo bi potrebno 1.3 miliona planeta zemlji da popuni jedno sunce 
+			(zamislite tu veličinu!). Gravitaciona sila sunca drži naš solarni sistem zajedno. 
+			Najtopliji deo sunca jeste njegovo jezgro u kome temperature dostižu čak 15 miliona stepeni 
+			celzijusovih. Sunčeva aktivnost, od najmanjih promena do najvećih eksplozija utiče na sve oko njega.
+			<br>
+			<br>
+			NASA i ostale internacionalne svemirske agencije posmatraju sunce 247. Proučavaju njegovu atmosferu, 
+			površinu, pa čak i ono što se nalazi unutar sunca koristeći specijlne instrumente.</td>
+			</tr>
+			</table>
+		  </div>
+		  <div class="column" id="c2">
+			<table class="bbbb" border="1" style="background-color:white">
+						<th colspan='2'>Osnovni podaci</th>
+						<tr>
+						<td>Prečnik</td>
+						<td>1 392 000 km</td>
+						</tr>
+						<tr>
+						<td>Masa</td>
+						<td>1,9891 x 10<sup>30</sup> kg</td>
+						</tr>
+						<td>Luminoznost</td>
+						<td>3,84 х 10<sup>26<sup> W</td>
+						<tr>
+						<td>Prosečna gustina</td>
+						<td>1,411 g/cm³</td>
+						<tr>
+						<td>Površinska temperatura</td>
+						<td>5780 K</td>
+						</tr>
+						<td>Temperatura u centru</td>
+						<td>15 х 10<sup>6</sup> K</td>
+						<tr>
+						<td>Vreme obilaska oko središta galaksije</td>
+						<td>2,2 x 10<sup>8</sup> година</td>
+						</tr>
+						<td>ugaoni radijus na rastojanju 1 A.J.</td>
+						<td>960 "</td>
+						<tr>
+						<td>Jačina gravitacionog polja na povrsini</td>
+						<td>274 N/kg</td>
+						</tr>
+						<td>Spektralna klasa</td>
+						<td>G2V</td>
+						</tr>
+						<td>Prividna bolometrijska magniuda</td>
+						<td>- 26,83</td>
+						<tr>
+						<td>Apsolutna bolometrijska magnituda</td>
+						<td>4,74</td>
+						</tr>
+						<tr>
+						<td>Srednje rastojanje od zemlje</td>
+						<td>149.6 х 10<sup>6</sup> km</td>
+						</tr>
+				</table>
+		  </div>
+		</div>
+		
+		
+		
+</BODY>
+</HTML>
